@@ -1,8 +1,13 @@
+"""
+Test the model after it has been converted to ONNX format.
+"""
+
 import onnxruntime
 import numpy as np
 import cv2
 
 """Configurations"""
+# Make sure to edit the patchs as required.
 ONNX_MODEL_PATH = "/mnt/mintuser-home/mint-profile/Desktop/dusk-dev/runs/detect/runs/train/captcha_test_stabilise/weights/best.onnx"
 IMAGE_PATH = "succeeded/captcha-52972.png"
 IMG_SIZE = 384
@@ -22,7 +27,6 @@ inputs = session.get_inputs()
     print(i.name, i.shape, i.type)"""
 #   images [1, 3, 384, 384] tensor(float)
 # [1, 3, 384, 384] -> [batch, channels, height, width]
-
 
 
 input_name = inputs[0].name
