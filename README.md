@@ -40,8 +40,8 @@ Almost all captcha images in use in my dataset was fetched with the help of http
 https://github.com/wkentaro/labelme was used to annotate captcha images.
 There may be better alternatives to Labelme available (Like Roboflow for example), I choose Labelme to keep everything local.
 
-**Results:**
-<img src="images/results.png" width=700 height=330>
+**Results:**<br>
+<img src="images/results.png" width=700 height=330><br>
 <small>more available through `images` folder.</small>
 
 **Conclusion:**
